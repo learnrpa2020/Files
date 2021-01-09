@@ -1,0 +1,156 @@
+create variable
+================
+declaration:
+------------
+syntax: var variablename
+eg: var x=0;
+var y="test";
+var result=true;
+
+function creation:
+==================
+syntax: function function_name(){
+body;
+return result;
+};
+
+eg:
+function addition(a,b){
+result= a+b;
+return result;
+};
+
+conditional check:
+==================
+i) syntax:
+if(condition){
+body}
+else if(condition){
+}
+else{
+}
+
+eg:if(a<=10){
+console.log("less than or equal to 10");
+}
+else if(30<a>10){
+console.log("less than  30 or greater than 10");}
+else{
+console.log("Not known");}
+
+
+ii)switch statement:
+switch(variable){
+case 1: 
+	body;
+	break;
+case 2:
+	body;
+	break;
+default:
+	body;
+	break;
+}
+
+ex:
+switch(day){
+case 1: 
+	console.log("Sunday");
+	break;
+case 2:
+	console.log("Monday");
+	break;
+default:
+	console.log("Not a correct input");
+	break;
+}
+
+loops:
+=====
+i)syntax: for(initialization;condition;increment/decrement){
+body;
+}
+
+ex: for(var i=0;i<10;i++){
+console.log(i);
+}
+
+ii)syntax: while(condition){
+body;
+increment/decrement;}
+
+ex:i=0;
+ while(i<10){
+console.log(i);
+i++;
+}
+
+iii)syntax: do{
+body;
+increament/decrement;
+}
+while(condition);
+
+ex:i=0; 
+do{
+console.log(i);
+i++;
+}
+while(i<10);
+
+iv) syntax: 
+array.forEach(function(){
+body;})
+
+ex:list=["apple","orange","banana"]
+list.forEach(function(i){
+console.log(i);
+})
+
+Datatypes:
+==========
+i)arrays:
+syntax: var variablename=[...,...,...];
+methods in arrays: push(),pop()
+ii)object:
+syntax: var variablename={"key":value};
+ex:
+var username=prompt("Enter username");
+var password=prompt("Enter the password");
+
+var user={
+	"username": username,
+	"password": password,
+	"lang":["tamil","english","hindi"],
+	"maritial_status":"yes",
+	is_married: function() {
+		return true;
+	}
+};
+
+var languages=["apple","ios","android","java"]
+alert("Welcome to santino");
+console.log(user.username);
+console.log(user.password);
+for(var i=0;i<languages.length;i++){
+	alert(languages[i]);
+
+}
+for(var i=0;i<user.lang.length;i++){
+	console.log(user.lang[i]);
+
+}
+
+if (user.maritial_status==="yes")
+{
+console.log(user.is_married());
+}
+
+
+
+
+
+
+
+
+
